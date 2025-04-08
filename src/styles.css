@@ -1,0 +1,132 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* You can add global styles to this file, and also import other style files */
+
+/* Import Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* Global Styles */
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --success-color: #198754;
+  --info-color: #0dcaf0;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-color), #0a58ca);
+  color: white;
+  padding: 4rem 0;
+  margin-bottom: 3rem;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Feature Cards */
+.feature-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* Form Styles */
+.rating-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-check-inline {
+  margin-right: 0;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  border-radius: 10px 10px 0 0 !important;
+}
+
+/* Button Styles */
+.btn {
+  border-radius: 5px;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--light-color);
+  border-top: 1px solid #dee2e6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .hero-image {
+    margin-top: 2rem;
+  }
+  
+  .feature-card {
+    margin-bottom: 1rem;
+  }
+}
